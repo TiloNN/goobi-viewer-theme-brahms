@@ -1,0 +1,38 @@
+.page-header {
+    &__logo {
+        a {
+            img {
+                max-width: 226px;
+            }
+        }
+    }
+}
+
+.page-footer {
+  background-color: transparent;
+  font-size: 1.6rem;
+  &__wrapper {
+    justify-content: center;
+    &--links {
+      background-color: @b-iron;
+    }
+    &--copyright {
+      font-size: 1.4rem;
+    }
+  }
+  &__links {
+    padding: 2.4rem 0;
+  }
+  &__copyright {
+    color: @b-text;
+    padding: 2rem 0;
+  }
+  a {
+    color: @b-text;
+    &:hover,
+    &:active,
+    &:focus {
+        color: @b-text;
+    }
+  }
+}

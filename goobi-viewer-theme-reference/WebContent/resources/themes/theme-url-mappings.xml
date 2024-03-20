@@ -2,19 +2,19 @@
 <pretty-config xmlns="http://ocpsoft.com/prettyfaces/3.3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xsi:schemaLocation="http://ocpsoft.com/prettyfaces/3.3.2 http://ocpsoft.com/xml/ns/prettyfaces/ocpsoft-pretty-faces-3.3.2.xsd">
-   
+
     <!-- URL MAPPINGS -->
     <url-mapping id="index">
         <pattern value="/" />
-        <view-id value="/resources/themes/reference/urlMappings/index.xhtml" />
+        <view-id value="/resources/themes/reference/urlMappings/brahms-index.xhtml" />
         <action onPostback="false">#{searchBean.setActiveSearchType(0)}</action>
     </url-mapping>
     <url-mapping id="index2">
         <pattern value="/index/" />
-        <view-id value="/resources/themes/reference/urlMappings/index.xhtml" />
+        <view-id value="/resources/themes/reference/urlMappings/brahms-index.xhtml" />
         <action onPostback="false">#{searchBean.setActiveSearchType(0)}</action>
     </url-mapping>
-    
+
     <!-- WORK MAPPING -->
     <url-mapping>
 		<pattern value="/id/#{pi:activeDocumentBean.persistentIdentifier}/" />
