@@ -1,11 +1,11 @@
 {
-  "name": "goobi-viewer-theme-reference",
+  "name": "goobi-viewer-theme-brahms",
   "version": "3.4.0",
   "description": "This is a theme template for the Goobi viewer.",
   "author": "intranda GmbH",
   "repository": {
     "type": "git",
-    "url": "https://gitea.intranda.com/goobi-viewer/goobi-viewer-theme-reference.git"
+    "url": "https://github.com/TiloNN/goobi-viewer-theme-brahms.git"
   },
   "license": "GPL-2.0-or-later",
   "devDependencies": {

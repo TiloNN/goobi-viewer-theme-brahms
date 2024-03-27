@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <component>
   <jsfComponent>
-    <library>themes/reference/cms/components/frontend/component</library>
+    <library>themes/brahms/cms/components/frontend/component</library>
     <name>brahms-home</name>
   </jsfComponent>
   <label>cms_component__brahms-home__label</label>

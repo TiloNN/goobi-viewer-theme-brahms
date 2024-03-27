@@ -1,4 +1,4 @@
-# Goobi viewer - Theme Reference
+# Goobi viewer - Theme Brahms
 > Theme reference as clean and easy theme for your digital library framework - made by the Goobi developer team
 
 
@@ -38,7 +38,7 @@ More screenshots can be found in the folder doc/images. Please try to create com
 
 
 ## Documentation
-A complete documentation of the Goobi viewer can be found using this URL:  
+A complete documentation of the Goobi viewer can be found using this URL:
 <https://docs.intranda.com/>
 
 
@@ -64,9 +64,9 @@ Detailed monthly digests can be found using this URL:
 
 
 ## Developer team
-intranda GmbH  
-Bertha-von-Suttner-Str. 9  
-37085 Göttingen  
+intranda GmbH
+Bertha-von-Suttner-Str. 9
+37085 Göttingen
 Germany
 
 
@@ -83,7 +83,7 @@ If you would like to get in touch with the developers please use the following c
 
 
 ## Licence
-The Goobi viewer connector is released under the license GPL2 or later.  
+The Goobi viewer connector is released under the license GPL2 or later.
 Please see ``LICENSE`` for more information.
 
 
@@ -93,4 +93,3 @@ Please see ``LICENSE`` for more information.
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
-

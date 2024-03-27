@@ -5,21 +5,21 @@
 		http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.goobi.viewer.theme</groupId>
-	<artifactId>theme-reference</artifactId>
+	<artifactId>theme-brahms</artifactId>
 	<version>24.01.1</version>
 	<packaging>war</packaging>
 
 
-	<name>Goobi viewer - Theme Reference</name>
-	<url>https://github.com/intranda/goobi-viewer-theme-reference</url>
+	<name>Goobi viewer - Theme Brahms</name>
+	<url>https://github.com/TiloNN/goobi-viewer-theme-brahms</url>
 
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.release>17</maven.compiler.release>
-		
+
 		<!-- Manifest information -->
-		<themeName>reference</themeName>
+		<themeName>brahms</themeName>
 		<maven.build.timestamp.format>yyyy-MM-dd_HH-mm</maven.build.timestamp.format>
 		<buildDate>${maven.build.timestamp}</buildDate>
 	</properties>
@@ -34,10 +34,10 @@
 
 
 	<scm>
-		<url>scm:git:https://github.com/intranda/goobi-viewer-theme-reference/</url>
-		<connection>scm:git:https://github.com/intranda/goobi-viewer-theme-reference/</connection>
+		<url>scm:git:https://github.com/TiloNN/goobi-viewer-theme-brahms/</url>
+		<connection>scm:git:https://github.com/TiloNN/goobi-viewer-theme-brahms/</connection>
 	</scm>
-	
+
 
 	<dependencies>
 		<dependency>
@@ -128,7 +128,7 @@
 				</nonFilteredFileExtensions>
 		        </configuration>
 		     </plugin>
-			
+
 			<!-- Maven Compiler Plugin -->
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
