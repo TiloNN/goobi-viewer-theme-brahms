@@ -1,7 +1,7 @@
 <!DOCTYPE html [
-	<!ENTITY copy "&#169;">
-	<!ENTITY times "&#215;">
-	<!ENTITY nbsp "&#160;">
+  <!ENTITY copy "&#169;">
+  <!ENTITY times "&#215;">
+  <!ENTITY nbsp "&#160;">
 ]>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
@@ -24,9 +24,9 @@
   <c:set var="excludeCSS" value="#{[]}" />
   <c:set var="excludeJS" value="#{[]}" />
 
-	<h:head profile="http://dublincore.org/documents/dcq-html/">
+  <h:head profile="http://dublincore.org/documents/dcq-html/">
 
-	<ui:insert name="head" />
+  <ui:insert name="head" />
 
     <title>
       <h:outputText value="#{activeDocumentBean.titleBarLabel} - " rendered="#{activeDocumentBean.titleBarLabel != null}" />#{adminThemesBean.getThemeLabel(configurationBean.name)}
@@ -69,14 +69,14 @@
         <link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/themes/#{navigationHelper.theme}/css/dist/#{navigationHelper.subThemeDiscriminatorValue}.min.css?${navigationHelper.buildVersion}" />
     </h:panelGroup>
 
-	<!-- QUICK CSS IN VIEWER BACKEND - ADDS <style> NODE -->
-	<h:outputText escape="false" value="#{adminThemesBean.styleSheet}"/>
+  <!-- QUICK CSS IN VIEWER BACKEND - ADDS <style> NODE -->
+  <h:outputText escape="false" value="#{adminThemesBean.styleSheet}"/>
 
     <!-- JAVASCRIPT -->
     <ui:include src="/resources/includes/templateHeads/js.xhtml">
       <ui:param name="templateName" value="#{templateName}" />
       <ui:param name="excludeJS" value="#{excludeJS}" />
-	  <ui:param name="cacheBuster" value="cachetimestamp=2022-9-1-10-5-6" />
+      <ui:param name="cacheBuster" value="cachetimestamp=2022-9-1-10-5-6" />
     </ui:include>
 
 </h:head>
@@ -84,19 +84,19 @@
 <ui:insert name="metadata" />
 
 <h:body id="viewer">
-	<h:panelGroup id="subBody" layout="block">
+  <h:panelGroup id="subBody" layout="block">
 
-	  <f:view locale="#{navigationHelper.locale}">
+    <f:view locale="#{navigationHelper.locale}">
       <!-- TOP ANCHOR FOR SCROLLING TO TOP -->
       <span id="top"></span>
 
       <!-- COinS -->
       <span class="Z3988" title="#{activeDocumentBean.viewManager.contextObject}"></span>
 
-	    <!-- MESSAGES -->
-			<div class="messages">
+      <!-- MESSAGES -->
+      <div class="messages">
         <h:messages id="messages" infoClass="alert alert-success" errorClass="alert alert-danger" />
-			</div>
+      </div>
 
       <!-- LAYOUT -->
       <ui:include src="includes/brahms-layout.xhtml" />
