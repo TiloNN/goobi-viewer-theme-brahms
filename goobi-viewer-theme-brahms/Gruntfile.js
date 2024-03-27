@@ -11,9 +11,9 @@ module.exports = function(grunt) {
 	// ---------- PROJECT CONFIG ----------
     grunt.initConfig({
         theme: {
-            name: 'reference',
+            name: 'brahms',
             subThemeOne: 'subtheme1',
-            subThemeTwo: 'subtheme2' 
+            subThemeTwo: 'subtheme2'
         },
         pkg: grunt.file.readJSON('package.json'),
         src: {
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
 					reload : true
 				}
 			},
-			
+
             css: {
                 files: [ 'WebContent/resources/themes/<%=theme.name%>/css/**/*.less' ],
                 tasks: [ 'less', 'sync' ],
@@ -133,7 +133,7 @@ module.exports = function(grunt) {
             	options:{
 	          		patterns: [ {
 						match: /cachetimestamp=[0-9-]+/g,
-						replacement: 'cachetimestamp=<%= new Date().getFullYear()+"-"+(new Date().getMonth()+1)+"-"+new Date().getDate()+"-"+(new Date().getHours())+"-"+(new Date().getMinutes())+"-"+(new Date().getSeconds()) %>' 
+						replacement: 'cachetimestamp=<%= new Date().getFullYear()+"-"+(new Date().getMonth()+1)+"-"+new Date().getDate()+"-"+(new Date().getHours())+"-"+(new Date().getMinutes())+"-"+(new Date().getSeconds()) %>'
 					} ],
 					usePrefix: false,
             	},
@@ -149,7 +149,7 @@ module.exports = function(grunt) {
             }
         },
     });
-    
+
 	// ---------- LOAD TASKS ----------
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch' );
@@ -157,7 +157,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-riot');
     grunt.loadNpmTasks('grunt-sync');
 	grunt.loadNpmTasks('grunt-replace');
-    
+
 	// ---------- REGISTER DEVELOPMENT TASKS ----------
     grunt.registerTask('default', [ 'sync', 'watch' ]);
     grunt.registerTask('cache', [ 'sync', 'replace' ]);
