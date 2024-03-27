@@ -40,6 +40,7 @@
             </a>
           </div>
 
+          <ui:fragment rendered="#{cmsPage.wrapperElementClass != 'home'}">
           <!-- PAGE HEADER TOP ACTIONS -->
           <div class="page-header__actions">
             <!-- BOOKMARKS -->
@@ -95,6 +96,7 @@
             </button>
 
           </div>
+          </ui:fragment>
         </div>
       </div>
 
@@ -157,7 +159,13 @@
           </div>
 
           <!-- BREADCRUMBS -->
-          <viewerComponent:breadcrumbs showIcon="false" showStartText="true" />
+          <ui:fragment rendered="#{cmsPage.wrapperElementClass != 'home'}">
+            <viewerComponent:breadcrumbs showIcon="false" showStartText="true" />
+          </ui:fragment>
+
+          <ui:fragment rendered="#{cmsPage.wrapperElementClass == 'home'}">
+            Introbild
+          </ui:fragment>
 
           <ui:insert name="content" />
 
@@ -178,7 +186,6 @@
   </div>
 
   <footer id="pageFooter" class="page-footer">
-
     <div class="page-footer__wrapper page-footer__wrapper--links">
       <div class="page-footer__links">
         <a href="#">Impressum</a>
@@ -197,7 +204,6 @@
   </footer>
 
 </div>
-
 
   <!-- MOBILE ONLY NAVIGATION -->
   <nav class="page-navigation__mobile #{userBean.admin ? '-adminActive':''}">
@@ -258,4 +264,5 @@
       </footer>
     </div>
   </div>
+
 </ui:composition>
