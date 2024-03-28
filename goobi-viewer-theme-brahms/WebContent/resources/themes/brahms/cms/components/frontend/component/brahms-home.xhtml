@@ -31,33 +31,62 @@
 
         <!-- RENDER THE HTML OUTPUT/CONTENT -->
         <div class="brahms-tiles">
+
           <div class="brahms-tiles__item brahms-tiles__item--portal">
             <img
+              class="brahms-tiles__logo"
               src="#{request.contextPath}/resources/themes/brahms/images/brahms/logo/brahms-portal.svg"
               alt="Portal" />
-            <div>
-              <h:outputText escape="false" value="#{cc.attrs.component.getContentData('text-portal')}"></h:outputText>
+            <div class="brahms-tiles__content">
+              <h:outputText
+                escape="false"
+                value="#{cc.attrs.component.getContentData('text-portal')}"></h:outputText>
             </div>
-            <a href="#{request.contextPath}/home/" class="btn btn-brahms-black">#{msg.button__read_more}</a>
+            <a
+              href="#{request.contextPath}/home/"
+              class="btn btn-brahms-black stretched-link">
+              #{msg.button__read_more}
+            </a>
           </div>
+
           <div class="brahms-tiles__item brahms-tiles__item--institute">
             <img
+              class="brahms-tiles__logo"
               src="#{request.contextPath}/resources/themes/brahms/images/brahms/logo/brahms-institut.svg"
               alt="Institut" />
-            <div>
-              <h:outputText escape="false" value="#{cc.attrs.component.getContentData('text-institute')}"></h:outputText>
+            <div class="brahms-tiles__content">
+              <h:outputText
+                escape="false"
+                value="#{cc.attrs.component.getContentData('text-institute')}"></h:outputText>
             </div>
-            <a href="#{msg.url__brahms_institut}" class="btn btn-brahms-black">#{msg.button__read_more}</a>
+            <a
+              href="#{msg.customer__url__brahms_institut}"
+              class="btn btn-brahms-black stretched-link">
+              #{msg.button__read_more}
+            </a>
           </div>
+
           <div class="brahms-tiles__item brahms-tiles__item--360">
             <img
+              class="brahms-tiles__logo"
               src="#{request.contextPath}/resources/themes/brahms/images/brahms/logo/brahms-360.svg"
               alt="360" />
-            <div>
-              <h:outputText escape="false" value="#{cc.attrs.component.getContentData('text-360')}"></h:outputText>
+            <div class="brahms-tiles__content">
+              <img
+                class="brahms-tiles__figure"
+                src="#{request.contextPath}/resources/themes/brahms/images/brahms/figure/360-grad.jpg"
+                alt="360" />
+              <h:outputText
+                escape="false"
+                value="#{cc.attrs.component.getContentData('text-360')}"></h:outputText>
             </div>
-            <a href="#{request.contextPath}/360-grad/" class="btn btn-brahms-black">#{msg.button__read_more}</a>
+            <a
+              href="#{msg.customer__url__360_grad}"
+              class="btn btn-brahms-black stretched-link">
+              #{msg.button__read_more}
+            </a>
           </div>
+
         </div>
       </div>
 
