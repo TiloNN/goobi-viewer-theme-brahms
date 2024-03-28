@@ -30,9 +30,35 @@
         </ui:fragment>
 
         <!-- RENDER THE HTML OUTPUT/CONTENT -->
-        <h:outputText escape="false" value="#{cc.attrs.component.getContentData('text-portal')}"></h:outputText>
-        <h:outputText escape="false" value="#{cc.attrs.component.getContentData('text-institute')}"></h:outputText>
-        <h:outputText escape="false" value="#{cc.attrs.component.getContentData('text-360')}"></h:outputText>
+        <div class="brahms-tiles">
+          <div class="brahms-tiles__item brahms-tiles__item--portal">
+            <img
+              src="#{request.contextPath}/resources/themes/brahms/images/brahms/logo/brahms-portal.svg"
+              alt="Portal" />
+            <div>
+              <h:outputText escape="false" value="#{cc.attrs.component.getContentData('text-portal')}"></h:outputText>
+            </div>
+            <a href="#{request.contextPath}/home/" class="btn btn-brahms-black">#{msg.button__read_more}</a>
+          </div>
+          <div class="brahms-tiles__item brahms-tiles__item--institute">
+            <img
+              src="#{request.contextPath}/resources/themes/brahms/images/brahms/logo/brahms-institut.svg"
+              alt="Institut" />
+            <div>
+              <h:outputText escape="false" value="#{cc.attrs.component.getContentData('text-institute')}"></h:outputText>
+            </div>
+            <a href="#{msg.url__brahms_institut}" class="btn btn-brahms-black">#{msg.button__read_more}</a>
+          </div>
+          <div class="brahms-tiles__item brahms-tiles__item--360">
+            <img
+              src="#{request.contextPath}/resources/themes/brahms/images/brahms/logo/brahms-360.svg"
+              alt="360" />
+            <div>
+              <h:outputText escape="false" value="#{cc.attrs.component.getContentData('text-360')}"></h:outputText>
+            </div>
+            <a href="#{request.contextPath}/360-grad/" class="btn btn-brahms-black">#{msg.button__read_more}</a>
+          </div>
+        </div>
       </div>
 
     </ui:fragment>

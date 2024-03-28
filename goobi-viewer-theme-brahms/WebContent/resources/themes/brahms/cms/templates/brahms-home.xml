@@ -4,13 +4,13 @@
     <library>themes/brahms/cms/components/frontend/component</library>
     <name>brahms-home</name>
   </jsfComponent>
-  <label>cms_component__brahms-home__label</label>
-  <description>cms_component__brahms-home__desc</description>
+  <label>cms_component__brahms_home__label</label>
+  <description>cms_component__brahms_home__desc</description>
   <icon>cms/components/frontend/component/icon/htmltext.png</icon>
 
   <content>
     <item id="text-portal">
-      <label>cms_component__brahms-home__text-portal__label</label>
+      <label>cms_component__brahms_home__text_portal__label</label>
       <className>io.goobi.viewer.model.cms.pages.content.types.CMSMediumTextContent</className>
       <jsfComponent>
         <library>cms/components/backend/content</library>
@@ -21,7 +21,7 @@
 
   <content>
     <item id="text-institute">
-      <label>cms_component__brahms-home__text-institute__label</label>
+      <label>cms_component__brahms_home__text_institute__label</label>
       <className>io.goobi.viewer.model.cms.pages.content.types.CMSMediumTextContent</className>
       <jsfComponent>
         <library>cms/components/backend/content</library>
@@ -32,7 +32,7 @@
 
   <content>
     <item id="text-360">
-      <label>cms_component__brahms-home__text-360__label</label>
+      <label>cms_component__brahms_home__text_360__label</label>
       <className>io.goobi.viewer.model.cms.pages.content.types.CMSMediumTextContent</className>
       <jsfComponent>
         <library>cms/components/backend/content</library>
