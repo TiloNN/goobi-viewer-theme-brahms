@@ -2,7 +2,7 @@
 <component>
   <jsfComponent>
     <library>themes/brahms/cms/components/frontend/component</library>
-    <name>brahms-home</name>
+    <name>brahms-start</name>
   </jsfComponent>
   <label>cms_component__brahms_home__label</label>
   <description>cms_component__brahms_home__desc</description>
