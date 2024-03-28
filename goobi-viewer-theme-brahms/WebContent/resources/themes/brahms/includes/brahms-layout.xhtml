@@ -213,7 +213,9 @@
       <div class="page-footer__wrapper page-footer__wrapper--links">
         <div class="page-footer__links">
           <a href="#">Impressum</a>
-          <a href="#">Kontakt</a>
+          <c:if test="#{not empty adminThemesBean.currentTheme.getFooterLink('contact').linkUrl}">
+            <a href="#{adminThemesBean.getFooterUrl('contact', 'default_contact_link')}">#{msg.contact}</a>
+          </c:if>
           <a href="#">Service</a>
           <a href="#">Datenschutz</a>
         </div>
@@ -221,7 +223,15 @@
 
       <div class="page-footer__wrapper page-footer__wrapper--copyright">
         <div class="page-footer__copyright">
-          <span>© 2022 Brahms-Institut an der Musikhochschule Lübeck</span>
+          <span>#{msg.brahms_layout__footer__copyright_sign}</span>
+          <span class="current-year"></span>
+          <span>#{msg.brahms_layout__footer__copyright_text}</span>
+          <script>
+            $( document ).ready(function() {
+              $(".current-year").html(new Date().getFullYear());
+            });
+          </script>
+          <span></span>
         </div>
       </div>
 
