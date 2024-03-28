@@ -1,0 +1,93 @@
+.brahms-intro {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 7px solid @b-petrol;
+  background-color: @b-paper;
+  &__container {
+    position: absolute;
+    z-index: 3;
+    width: 1140px;
+    left: 50%;
+    top: 0;
+    margin-left: -570px;
+  }
+  &__logo {
+    margin-top: 60px;
+    img {
+      height: 70px;
+    }
+  }
+  &__slogan {
+    margin-top: 420px;
+  }
+}
+
+.startpage-headline {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  &__text {
+    display: inline-block;
+    margin-top: -30px;
+    color: @b-white;
+    background-color: @b-petrol;
+    text-transform: uppercase;
+    padding: 23px 70px;
+    font-size: 22px;
+  }
+}
+
+.start {
+  .page-header__spacer {
+    display: none;
+  }
+  .cms-page__title {
+    display: none;
+  }
+  .page-content__main {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 0;
+  }
+}
+
+.brahms-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__item {
+    flex: 0 0 530px;
+    text-align: center;
+    padding: 97px 77px 60px 78px;
+    border: 1px solid @b-border;
+    margin-bottom: 44px;
+    position: relative; // need for end streched link
+    &--360 {
+      flex: 0 0 100%;
+    }
+  }
+  &__figure {
+    width: 100%;
+    margin-bottom: 83px;
+  }
+  &__content {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 2.16px;
+    margin-bottom: 87px;
+    &::before {
+      content: " ";
+      width: 100px;
+      height: 1px;
+      display: inline-block;
+      background-color: @b-divider;
+      margin-top: 30px;
+      margin-bottom: 70px;
+      text-align: center;
+    }
+  }
+}
